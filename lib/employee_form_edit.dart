@@ -162,8 +162,8 @@ class _EmployeeFormEditState extends State<EmployeeFormEdit>{
                   backgroundColor: Colors.lightGreen, elevation: 0),
                 onPressed: () async{
                   bool updateStatus = await ds.updateId(
-                    'name_email', 
-                    name.text + '~' + email.text, 
+                    'name_email_gender_phone_birthday_address', 
+                    '${name.text}~${email.text}~$gender~${phone.text}~${birthday.text}~${address.text}',
                     '63476a7599b6c11c094bd4ff',
                     'office',
                     'employee',
